@@ -52,13 +52,59 @@ public class Test {
     }
 
     public static void main(String[] args) {
-     Test test=new Test();
+        Test test = new Test();
+        //test FIB
+        //Test 0
+        try {
+            System.out.println(test.checkFib(0));
+        } catch (Exception e) {
+            e.getMessage();
+        }
+        //Test negative
+        try {
+            System.out.println(test.checkFib(-5));
+        } catch (Exception e) {
+            e.getMessage();
+        }
+        //Test normal
         try {
             System.out.println(test.checkFib(6));
         } catch (Exception e) {
             e.getMessage();
         }
+        //Test big
+        try {
+            System.out.println(test.checkFib(60));
+        } catch (Exception e) {
+            e.getMessage();
+        }
 
+
+        //test SIL
+        //Test 0
+        try {
+            System.out.println(test.checkSil(0));
+        } catch (Exception e) {
+            e.getMessage();
+        }
+        //Test negative
+        try {
+            System.out.println(test.checkSil(-5));
+        } catch (Exception e) {
+            e.getMessage();
+        }
+        //Test normal
+        try {
+            System.out.println(test.checkSil(6));
+        } catch (Exception e) {
+            e.getMessage();
+        }
+        //Test big
+        try {
+            System.out.println(test.checkSil(60));
+        } catch (Exception e) {
+            e.getMessage();
+        }
 
     }
 }

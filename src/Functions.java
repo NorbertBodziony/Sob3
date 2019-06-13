@@ -1,6 +1,10 @@
 public class Functions {
 
     public int fib(int x) {
+        if( x>20)
+        {
+            return -99;
+        }
         if (x < 0) {
             return -1;
         }
@@ -15,6 +19,10 @@ public class Functions {
     }
 
     public int sil(int x) {
+        if( x>20)
+        {
+            return -99;
+        }
         if (x < 0) {
             return -1;
         }
